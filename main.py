@@ -77,6 +77,6 @@ print(noteTable)
 noteTableStr = str(noteTable)
 noteTableStr = noteTableStr.replace("[", "{")
 noteTableStr = noteTableStr.replace("]", "}") + ";"
-noteTableStr = "uint32_t musicTable[][7] = " + noteTableStr + "\nint musicLen = " + str(noteTable.__len__() - 2) + ";"
+noteTableStr = "uint32_t musicTable[][3] = " + noteTableStr + "\nint musicLen = " + str(noteTable.__len__() - 2) + ";"
 
 print(noteTableStr)
