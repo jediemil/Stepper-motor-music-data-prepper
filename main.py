@@ -22,6 +22,7 @@ playedFreqs = {}  #
 savedTime = 0
 
 for i, message in enumerate(merged_midi.tracks[0]):
+    # Can probably be much more efficient. But since it only runs once, it doesn't really matter.
 
     if message.type == "note_on":
         freq = round(noteToFreq(message.note))
