@@ -1,4 +1,4 @@
-instruments = [
+instruments = [  # Formatted by ChatGPT
     ("Piano", "Acoustic Grand Piano"),
     ("Piano", "Bright Acoustic Piano"),
     ("Piano", "Electric Grand Piano"),
