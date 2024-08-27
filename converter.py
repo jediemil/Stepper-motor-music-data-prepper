@@ -44,3 +44,6 @@ def convert_midi(mid):
     merged_midi.tracks = [mido.merge_tracks(mid.tracks)]
 
     note_sequence = []
+
+    # VIKTIGT: Om message.time är 0 kan det vara så att något nytt ska hända direkt efter på samma motor.
+    # Efter att note_sequence har genererats kan alla händelser med time = 0 kollas, och de som berör samma motor raderas.
