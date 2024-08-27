@@ -31,7 +31,8 @@ pre_select = []
 for i, track in enumerate(mid.tracks):
     program = find_last_program_change(track)
     if program.channel == 9:
-        tracks.append(f"{i}: {percussion[program.program]} TRUMMOR")  # Take values from other list (https://en.wikipedia.org/wiki/General_MIDI)
+        tracks.append(
+            f"{i}: {percussion[program.program]} TRUMMOR")  # Take values from other list (https://en.wikipedia.org/wiki/General_MIDI)
         pre_select.append(i)
     else:
         tracks.append(f"{i}: {instruments[program.program][1]}")

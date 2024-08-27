@@ -129,7 +129,7 @@ instruments = [  # Formatted by ChatGPT
     ("Sound Effects", "Gunshot")
 ]
 
-percussion = [
+percussion = [  # Formatted by ChatGPT
     "Acoustic Bass Drum or Low Bass Drum",
     "Electric Bass Drum or High Bass Drum",
     "Side Stick",
