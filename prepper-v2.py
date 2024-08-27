@@ -1,5 +1,4 @@
 import os
-from os import listdir
 
 from simple_term_menu import TerminalMenu
 import mido
@@ -10,13 +9,13 @@ def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-def find_last_program_change(track):
-    program = mido.Message('program_change')
-    for message in track:
+def find_last_program_change(midi_track):
+    midi_program = mido.Message('program_change')
+    for message in midi_track:
         if message.type == 'program_change':
-            program = message
+            midi_program = message
 
-    return program
+    return midi_program
 
 
 # Choose input file
