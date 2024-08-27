@@ -2,6 +2,7 @@ import mido
 
 NUM_SPEAKERS = 8
 
+
 class Speaker:
     def __init__(self, speaker_id):
         self.speaker_id = speaker_id
@@ -24,7 +25,6 @@ class Player:
     def assign_freq_to_speaker(self, freq):
         if self.__is_available_speaker():
             pass
-
 
     def __is_available_speaker(self):
         for speaker in self.speakers:
